@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Toolbar</string>
+    <string-array name="sintomas_array">
+        <item>Fiebre</item>
+        <item>Tos</item>
+        <item>Vomito</item>
+        <item>Diarrea</item>
+        <item>Letargo</item>
+        <item>Perdida de apetito</item>
+        <item>Otros</item>
+        </string-array>
+</resources>

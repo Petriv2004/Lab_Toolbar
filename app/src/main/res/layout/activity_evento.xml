@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Este LinearLayout es el contenedor único para todos los elementos desplazables -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guarde las citas de tus mascotas"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Fecha -->
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha:"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/fechaHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Fecha de la cita"
+                android:inputType="none"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Hora -->
+            <TextView
+                android:id="@+id/hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hora:"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/horaHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Hora de la cita"
+                android:inputType="none"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Razón -->
+            <TextView
+                android:id="@+id/razon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Razón:"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/razonHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ej: Vacunación, Peluquería, Veterinario, etc."
+                android:inputType="text"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Descripción -->
+            <TextView
+                android:id="@+id/descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripción:"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/descripcionHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Añada una descripción"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Botón Guardar -->
+            <Button
+                android:id="@+id/guardarAgenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickGuardarAgenda"
+                android:text="Guardar"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
